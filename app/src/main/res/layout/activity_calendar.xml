@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalendarActivity">
+
+    <CalendarView
+        android:id="@+id/calendar"
+        android:layout_width="@dimen/max_by_min"
+        android:layout_height="@dimen/max_by_min"
+        android:layout_margin="@dimen/max_by_min"
+        android:focusedMonthDateColor="@color/colorAccent"
+        app:layout_constraintBottom_toTopOf="@+id/countries_validate_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+
+    <Button
+        android:id="@+id/countries_validate_button"
+        android:layout_width="@dimen/max_by_min"
+        android:layout_height="@dimen/item_size_medium"
+        android:layout_margin="@dimen/max_by_min"
+        android:background="@color/colorValidate"
+        android:text="@string/countries_validate"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/font_size_small"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="@dimen/max_by_min"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/max_by_min"
+        android:background="@color/colorAccent"
+        android:padding="@dimen/margin_medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/calendar_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/max_by_min"
+            android:textColor="@android:color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/calendar_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/max_by_min"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font_size_medium"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/calendar_year" />
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

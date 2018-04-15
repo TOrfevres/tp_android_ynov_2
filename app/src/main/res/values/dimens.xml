@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Global -->
+    <dimen name="max_by_min">0dp</dimen>
+    <dimen name="item_size_large">80dp</dimen>
+    <dimen name="item_size_medium">56dp</dimen>
+
+    <!-- Font -->
+    <dimen name="font_size_small">18sp</dimen>
+    <dimen name="font_size_medium">33sp</dimen>
+    <dimen name="font_size_large">48sp</dimen>
+
+    <!-- Margin -->
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_medium">15dp</dimen>
+    <dimen name="margin_large">30dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+</resources>

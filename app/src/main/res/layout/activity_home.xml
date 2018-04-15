@@ -6,13 +6,28 @@
     android:layout_height="match_parent"
     tools:context="com.ynov.android.to.tp_android_ynov_2.HomeActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+    <Button
+        android:id="@+id/countries_add_button"
+        android:layout_width="@dimen/max_by_min"
+        android:layout_height="@dimen/item_size_medium"
+        android:layout_margin="@dimen/max_by_min"
+        android:background="@color/colorAccent"
+        android:text="@string/countries_add"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/font_size_small"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.467"
+        app:layout_constraintStart_toStartOf="parent" />
 
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/user_countries_list"
+        android:layout_width="@dimen/max_by_min"
+        android:layout_height="@dimen/max_by_min"
+        android:layout_margin="@dimen/max_by_min"
+        app:layout_constraintBottom_toTopOf="@+id/countries_add_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>

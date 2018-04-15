@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CountriesActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/api_countries_list"
+        android:layout_width="@dimen/max_by_min"
+        android:layout_height="@dimen/max_by_min"
+        android:layout_margin="@dimen/max_by_min"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="@dimen/max_by_min"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/max_by_min"
+        android:padding="@dimen/max_by_min"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/countries_seach_button"
+            android:layout_width="@dimen/item_size_medium"
+            android:layout_height="@dimen/item_size_medium"
+            android:layout_margin="@dimen/max_by_min"
+            android:background="@color/colorAccent"
+            android:text="@string/countries_search"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font_size_small"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/constraintLayout"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/countries_seach_input"
+            android:layout_width="@dimen/max_by_min"
+            android:layout_height="@dimen/max_by_min"
+            android:layout_margin="@dimen/max_by_min"
+            android:background="@color/colorHighlight"
+            android:ems="10"
+            android:hint="@string/countries_search_hint"
+            android:inputType="textPersonName"
+            android:padding="@dimen/margin_small"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/countries_seach_button"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

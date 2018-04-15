@@ -1,3 +1,13 @@
 <resources>
-    <string name="app_name">tp_android_ynov_2</string>
+    <string name="app_name">WorldVisit</string>
+
+    <string name="countries_add">Ajouter un pays</string>
+    <string name="countries_search">OK</string>
+    <string name="countries_search_hint">Saisir un pays …</string>
+    <string name="countries_validate">Valider</string>
+    <string name="country_capital_label">Capitale: %1$s</string>
+    <string name="country_region_label">Continent: %1$s</string>
+    <string name="img_flag">flag</string>
+    <string name="img_trash">trash</string>
+    <string name="error">Error !</string>
 </resources>
